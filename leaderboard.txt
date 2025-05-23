@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Ahmet",
+    "score": 1200
+  },
+  {
+    "name": "Zeynep",
+    "score": 950
+  },
+  {
+    "name": "Mehmet",
+    "score": 1100
+  },
+  {
+    "name": "Ahmet",
+    "score": 5000
+  },
+  {
+    "name": "king",
+    "score": 95
+  }
+]
