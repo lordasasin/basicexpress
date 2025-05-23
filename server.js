@@ -19,7 +19,7 @@ app.get('/list', (req, res) => {
     res.json(leaderboard);
   });
 });
-
+         // POSTMAN KULLANARAK GET VE POST U DENEDİM
 
 app.post('/list', (req, res) => {
   const { name, score } = req.body;
