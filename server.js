@@ -36,21 +36,19 @@ app.post('/list', async (req, res) => {
 });
 
 
-app.put('/list', async (req, res) => {
+app.put('/list/:name', async (req, res) => {
   try {
+    const userName = req.params.name;
     const { name, score } = req.body;
 
     const data = await fs.readFile(file_path, 'utf8').catch(() => '[]');
     const leaderboard = JSON.parse(data);
-    if(name === req.name){
-      
-    }
+  
+    
     leaderboard.push({ name, score });
     res.send('User Updated');
 
-    
-
-  } catch (err) {
+    } catch (err) {
     res.status(500).send({ error: err.message });
   }
 });
